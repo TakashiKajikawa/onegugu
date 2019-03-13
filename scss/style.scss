@@ -1,0 +1,25 @@
+/*メモの付け方注意
+  import
+  変数
+  ネスト ~~の中に~~ { 
+                    a{
+  アンバサダ  名前の世襲に使う      {
+                    &_item{
+    BEM
+    Blocl__Element--modifer
+*/
+
+
+
+
+/*変数だけおくscssを作ったりもする*/
+/*@import 'common/base'; /* ファイル名に_をつけると_と拡張子は省略できる*/
+@import 'mixin';
+@import 'login/login';
+@import 'login/redicion-mail';
+@import 'login/redicion-conf';
+@import 'login/newpass-input';
+@import 'login/newpass-conf';
+@import 'signups/signups';
+@import 'signups/signups-conf';
+@import 'mainpage/mainpage';

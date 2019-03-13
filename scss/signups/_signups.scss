@@ -1,0 +1,15 @@
+.pc_signups{
+    width: 648px;
+    height: 264px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+        &-text{ 
+            margin-top:24px;
+            text-align: center;
+                p{
+                    font-size: 1.8rem;
+                    padding-bottom: 16px;
+            }
+        }
+}

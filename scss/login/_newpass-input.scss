@@ -1,0 +1,12 @@
+.pc_newpass{
+    width: 648px;
+    height: 322px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+        &-title{
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 24px;
+        }
+    }

@@ -1,0 +1,11 @@
+.pc_header{
+    @include header;
+}
+
+.subheading{
+    @include subheading;
+}
+
+.pc_main-button{
+    @include big_button;
+}

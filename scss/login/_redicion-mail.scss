@@ -1,0 +1,10 @@
+.pc_redicionmail{
+    @include smallbox;
+        &-button{
+            margin:16px auto 24px;
+            text-align: center;
+                a{
+                    @include button;
+                }        
+        }
+    }

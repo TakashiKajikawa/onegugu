@@ -1,0 +1,64 @@
+body{
+    @include body;
+}
+
+/* メインロゴ */
+.pc_logo-main{
+    font-size:4.8rem;
+    margin:32px 0 0 64px;
+}
+
+// /*サブロゴ*/
+.pc_logo-sub{
+    margin: 64px auto 0;
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    width: 1200px;
+        &:before,&:after{
+            content:"";
+            flex-grow: 1;
+            height: 8px;
+            background-color: #000000;
+            display: block;    
+        } 
+}
+
+// サブタイトル
+.pc_logo-sub{
+    &:before{
+        margin-right:0.8rem;
+    }
+    
+    &:after{
+        margin-left:0.8rem;
+    }
+}
+
+// 四角い枠
+.pc_redicion{
+    width: 648px;
+    height: 264px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+        &-text{ 
+            margin-top:24px;
+            text-align: center;
+                p{
+                    font-size: 1.8rem;
+                    padding-bottom: 16px;
+            }
+        }
+}
+
+.pc_redicion-input{
+     @include input_text;
+     margin: 16px 0 0 82px;
+     text-align: center;
+ }
+
+ .pc_redicion-button{
+     @include small_button;
+     margin: 32px 0 24px;
+ }

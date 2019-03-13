@@ -1,0 +1,148 @@
+/* 変数を設定できる*/
+$mainColor:#ffcf07;
+/*$btn:btn;*/
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color:$mainColor;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 62.5%;
+    color: #000000;
+}
+
+/* メインロゴ */
+.pc_logo-main{
+    font-size:4.8rem;
+    margin:32px 0 0 64px;
+}
+
+// /*サブロゴ*/
+.pc_logo-sub{
+    margin: 64px auto 0;
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    width: 1200px;
+        &:before,&:after{
+            content:"";
+            flex-grow: 1;
+            height: 8px;
+            background-color: #000000;
+            display: block;    
+        } 
+}
+
+// サブタイトル
+.pc_logo-sub{
+    &:before{
+        margin-right:0.8rem;
+    }
+    
+    &:after{
+        margin-left:0.8rem;
+    }
+}
+
+/*ログインメニュー*/
+.pc_login-wrapper{
+    width: 648px;
+    height: 344px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+}
+
+// ログインはこちら
+.pc_login-wrapper{
+    h3{
+        font-size: 2.4rem;
+        margin-top: 24px;
+        text-align: center;
+    }
+}
+
+/*同じ記述はまとめる ユニークな記述は分ける*/
+.pc_login-text{
+    font-size: 1.4rem;
+
+    // アドレス欄
+    &.login_addless{
+        margin: 24px 0 8px 80px;
+        font-size: 1.4rem;
+    }
+    //パスワード欄
+    &.login_password{
+        margin:16px 0 8px 80px;
+        font-size: 1.4rem;
+    }
+
+}
+
+.login_input{
+    margin: 0 0 0 82px;
+    width: 480px;
+    height: 32px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+
+.validation{
+    margin: 4px 0 0 80px;
+    font-size: 1.4rem;
+}
+
+//パスワード忘れ
+.password_forget-main{
+    text-align: right;
+    .password_forget-sub{
+        margin: 0 24px 0 0;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #000000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+// ログインボタン
+.login_button{
+    margin:32px 0 24px;
+    text-align: center;
+    input{
+        font-size: 2rem;
+        width: 240px;
+        height: 40px;
+        border-style:none;
+        border-radius: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: #000000 solid 2px;
+        background-color: #ffcf07;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+}
+
+//新規登録ボタン
+.pc_newacount{
+    margin:32px auto 0 ;
+    text-align: center;
+        a{
+            display: inline-block;
+            width: 640px;
+            height: 48px;
+            border: #000000 solid 2px;
+            border-radius: 16px;
+            font-size: 2rem;
+            text-decoration: none;
+            padding-top: 12px;
+            color: #000000;
+            &:hover{
+                background-color: #fff;
+            }
+        }        
+}
+

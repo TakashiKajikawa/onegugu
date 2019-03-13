@@ -1,0 +1,197 @@
+/*body*/
+@mixin body{
+    margin: 0;
+    width: 100%;
+    background-color:$mainColor;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    color: #000000;
+}
+
+
+/*テキスト入力欄*/
+@mixin input_text{
+    width: 480px;
+    height: 32px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+/*大ボタン*/
+@mixin big_button{
+    margin:40px auto 0 ;
+    text-align: center;
+        a{
+            display: inline-block;
+            width: 640px;
+            height: 48px;
+            border: #000000 solid 2px;
+            border-radius: 16px;
+            font-size: 2rem;
+            text-decoration: none;
+            padding-top: 12px;
+            color: #000000;
+            &:hover{
+                background-color: #fff;
+        }
+    }        
+}
+
+/*小ボタン*/
+@mixin small_button{
+    margin:32px auto 0 ;
+    text-align: center;
+        a{
+            display: inline-block;
+            width: 240px;
+            height: 48px;
+            border: #000000 solid 2px;
+            border-radius: 16px;
+            font-size: 2rem;
+            text-decoration: none;
+            padding-top: 12px;
+            color: #000000;
+            &:hover{
+                background-color: #fff;
+            }
+        }        
+}
+
+/*ボタン個別パーツ*/
+@mixin button{
+    display: inline-block;
+    width: 240px;
+    height: 48px;
+    border: #000000 solid 2px;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 12px;
+    color: #000000;
+    &:hover{
+        background-color: #fff;
+    }
+}
+
+/*メインロゴ*/
+@mixin mainlogo{
+    font-size:4.8rem;
+    margin:32px 0 0 64px;
+}
+
+/*サブタイトル*/
+@mixin sublogo{
+    margin: 64px auto 0;
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    width: 1200px;
+        &:before,&:after{
+            content:"";
+            flex-grow: 1;
+            height: 8px;
+            background-color: #000000;
+            display: block;    
+    }
+}
+
+/*小見出し*/
+@mixin subheading{
+    font-size: 2.4rem;
+    margin-top: 24px;
+    text-align: center;
+}
+
+/*大枠*/
+@mixin box{
+    width: 648px;
+    height: 264px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+        &-text{ 
+            margin-top:24px;
+            text-align: center;
+                p{
+                    font-size: 1.8rem;
+                    padding-bottom: 16px;
+            }
+        }
+}
+
+/*小枠*/
+@mixin smallbox{
+    width: 648px;
+    height: 184px;
+    margin: 80px auto 0;
+    border:0.2rem solid #000000;
+    border-radius: 2.4rem;
+        &-text{ 
+            margin-top:24px;
+            text-align: center;
+                p{
+                    font-size: 1.8rem;
+                    padding-bottom: 16px;
+            }
+        }
+    }
+
+/*ヘッダー*/
+@mixin header{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 2px solid #000;
+    .header-left{
+        display: flex;
+    }
+    .header-right{
+        display: flex;
+    }
+
+     &-title{
+         font-size: 4.8rem;
+         margin: 7px 88px 7px 16px;
+     }
+
+        a{
+        display: inline-block;
+        text-align: center;
+        padding-top: 9px;
+        margin: 11px 0 11px 0; 
+        border: solid 2px #000;
+        width: 200px;
+        height: 40px;
+        border-radius: 16px;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #000;
+        margin-left: auto;
+        &:hover{
+            background-color: #fff;
+        }
+     }
+
+     input{
+        width: 320px;
+        height: 32px;
+        border-radius: 8px;
+        border-style: none;
+        margin: 15px 88px 0 0;
+     }
+
+     &-account{
+        display: flex;
+        margin-right: 16px;
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 11px 8px 11px 0;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 2.4rem;
+            margin: 19px 0;   
+            text-decoration: underline;
+        }
+     }
+}

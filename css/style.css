@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/*メモの付け方注意
+  import
+  変数
+  ネスト ~~の中に~~ { 
+                    a{
+  アンバサダ  名前の世襲に使う      {
+                    &_item{
+    BEM
+    Blocl__Element--modifer
+*/
+/*変数だけおくscssを作ったりもする*/
+/*@import 'common/base'; /* ファイル名に_をつけると_と拡張子は省略できる*/
+/*body*/
+/*テキスト入力欄*/
+/*大ボタン*/
+/*小ボタン*/
+/*ボタン個別パーツ*/
+/*メインロゴ*/
+/*サブタイトル*/
+/*小見出し*/
+/*大枠*/
+/*小枠*/
+/*ヘッダー*/
+/* 変数を設定できる*/
+/*$btn:btn;*/
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #ffcf07;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 62.5%;
+  color: #000000; }
+
+/* メインロゴ */
+.pc_logo-main {
+  font-size: 4.8rem;
+  margin: 32px 0 0 64px; }
+
+.pc_logo-sub {
+  margin: 64px auto 0;
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+  width: 1200px; }
+  .pc_logo-sub:before, .pc_logo-sub:after {
+    content: "";
+    flex-grow: 1;
+    height: 8px;
+    background-color: #000000;
+    display: block; }
+
+.pc_logo-sub:before {
+  margin-right: 0.8rem; }
+
+.pc_logo-sub:after {
+  margin-left: 0.8rem; }
+
+/*ログインメニュー*/
+.pc_login-wrapper {
+  width: 648px;
+  height: 344px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+
+.pc_login-wrapper h3 {
+  font-size: 2.4rem;
+  margin-top: 24px;
+  text-align: center; }
+
+/*同じ記述はまとめる ユニークな記述は分ける*/
+.pc_login-text {
+  font-size: 1.4rem; }
+  .pc_login-text.login_addless {
+    margin: 24px 0 8px 80px;
+    font-size: 1.4rem; }
+  .pc_login-text.login_password {
+    margin: 16px 0 8px 80px;
+    font-size: 1.4rem; }
+
+.login_input {
+  margin: 0 0 0 82px;
+  width: 480px;
+  height: 32px;
+  border-radius: 8px;
+  border-style: none; }
+
+.validation {
+  margin: 4px 0 0 80px;
+  font-size: 1.4rem; }
+
+.password_forget-main {
+  text-align: right; }
+  .password_forget-main .password_forget-sub {
+    margin: 0 24px 0 0;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #000000; }
+    .password_forget-main .password_forget-sub:hover {
+      text-decoration: underline; }
+
+.login_button {
+  margin: 32px 0 24px;
+  text-align: center; }
+  .login_button input {
+    font-size: 2rem;
+    width: 240px;
+    height: 40px;
+    border-style: none;
+    border-radius: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: #000000 solid 2px;
+    background-color: #ffcf07; }
+    .login_button input:hover {
+      background-color: #fff; }
+
+.pc_newacount {
+  margin: 32px auto 0;
+  text-align: center; }
+  .pc_newacount a {
+    display: inline-block;
+    width: 640px;
+    height: 48px;
+    border: #000000 solid 2px;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 12px;
+    color: #000000; }
+    .pc_newacount a:hover {
+      background-color: #fff; }
+
+.pc_redicionmail {
+  width: 648px;
+  height: 184px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+  .pc_redicionmail-text {
+    margin-top: 24px;
+    text-align: center; }
+    .pc_redicionmail-text p {
+      font-size: 1.8rem;
+      padding-bottom: 16px; }
+  .pc_redicionmail-button {
+    margin: 16px auto 24px;
+    text-align: center; }
+    .pc_redicionmail-button a {
+      display: inline-block;
+      width: 240px;
+      height: 48px;
+      border: #000000 solid 2px;
+      border-radius: 16px;
+      font-size: 2rem;
+      text-decoration: none;
+      padding-top: 12px;
+      color: #000000; }
+      .pc_redicionmail-button a:hover {
+        background-color: #fff; }
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #ffcf07;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  color: #000000; }
+
+/* メインロゴ */
+.pc_logo-main {
+  font-size: 4.8rem;
+  margin: 32px 0 0 64px; }
+
+.pc_logo-sub {
+  margin: 64px auto 0;
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+  width: 1200px; }
+  .pc_logo-sub:before, .pc_logo-sub:after {
+    content: "";
+    flex-grow: 1;
+    height: 8px;
+    background-color: #000000;
+    display: block; }
+
+.pc_logo-sub:before {
+  margin-right: 0.8rem; }
+
+.pc_logo-sub:after {
+  margin-left: 0.8rem; }
+
+.pc_redicion {
+  width: 648px;
+  height: 264px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+  .pc_redicion-text {
+    margin-top: 24px;
+    text-align: center; }
+    .pc_redicion-text p {
+      font-size: 1.8rem;
+      padding-bottom: 16px; }
+
+.pc_redicion-input {
+  width: 480px;
+  height: 32px;
+  border-radius: 8px;
+  border-style: none;
+  margin: 16px 0 0 82px;
+  text-align: center; }
+
+.pc_redicion-button {
+  margin: 32px auto 0;
+  text-align: center;
+  margin: 32px 0 24px; }
+  .pc_redicion-button a {
+    display: inline-block;
+    width: 240px;
+    height: 48px;
+    border: #000000 solid 2px;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 12px;
+    color: #000000; }
+    .pc_redicion-button a:hover {
+      background-color: #fff; }
+
+.pc_newpass {
+  width: 648px;
+  height: 322px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+  .pc_newpass-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 24px; }
+
+.pc_newpassconf {
+  width: 648px;
+  height: 150px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+  .pc_newpassconf-text {
+    margin-top: 24px;
+    text-align: center; }
+    .pc_newpassconf-text p {
+      font-size: 1.8rem; }
+
+.pc_newpassconf-button {
+  margin: 32px auto 0;
+  text-align: center; }
+  .pc_newpassconf-button a {
+    display: inline-block;
+    width: 240px;
+    height: 48px;
+    border: #000000 solid 2px;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 12px;
+    color: #000000; }
+    .pc_newpassconf-button a:hover {
+      background-color: #fff; }
+
+.pc_signups {
+  width: 648px;
+  height: 264px;
+  margin: 80px auto 0;
+  border: 0.2rem solid #000000;
+  border-radius: 2.4rem; }
+  .pc_signups-text {
+    margin-top: 24px;
+    text-align: center; }
+    .pc_signups-text p {
+      font-size: 1.8rem;
+      padding-bottom: 16px; }
+
+.pc_header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 2px solid #000; }
+  .pc_header .header-left {
+    display: flex; }
+  .pc_header .header-right {
+    display: flex; }
+  .pc_header-title {
+    font-size: 4.8rem;
+    margin: 7px 88px 7px 16px; }
+  .pc_header a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+    margin: 11px 0 11px 0;
+    border: solid 2px #000;
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000;
+    margin-left: auto; }
+    .pc_header a:hover {
+      background-color: #fff; }
+  .pc_header input {
+    width: 320px;
+    height: 32px;
+    border-radius: 8px;
+    border-style: none;
+    margin: 15px 88px 0 0; }
+  .pc_header-account {
+    display: flex;
+    margin-right: 16px; }
+    .pc_header-account img {
+      width: 40px;
+      height: 40px;
+      margin: 11px 8px 11px 0;
+      border-radius: 50%; }
+    .pc_header-account p {
+      font-size: 2.4rem;
+      margin: 19px 0;
+      text-decoration: underline; }
+
+.subheading {
+  font-size: 2.4rem;
+  margin-top: 24px;
+  text-align: center; }
+
+.pc_main-button {
+  margin: 40px auto 0;
+  text-align: center; }
+  .pc_main-button a {
+    display: inline-block;
+    width: 640px;
+    height: 48px;
+    border: #000000 solid 2px;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 12px;
+    color: #000000; }
+    .pc_main-button a:hover {
+      background-color: #fff; }
