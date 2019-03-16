@@ -15,6 +15,7 @@
 /*テキスト入力欄*/
 /*大ボタン*/
 /*小ボタン*/
+/*submitbutton*/
 /*ボタン個別パーツ*/
 /*メインロゴ*/
 /*サブタイトル*/
@@ -23,7 +24,8 @@
 /*小枠*/
 /*ヘッダー*/
 /*戻る*/
-/*スイッチ*/
+/*アイコン（左）*/
+/*アイコン（右）*/
 /* 変数を設定できる*/
 /*$btn:btn;*/
 body {
@@ -349,14 +351,16 @@ body {
       background-color: #fff; }
 
 .pc_backbutton {
-  margin: 8px 0 0 8px;
   width: 120px;
   height: 40px;
   border: 2px solid #000;
   border-radius: 16px;
   cursor: pointer;
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  position: absolute;
+  top: 72px;
+  left: 8px; }
   .pc_backbutton p {
     display: inline-block;
     font-size: 2.4rem;
@@ -365,78 +369,150 @@ body {
     text-decoration: none;
     color: #000; }
 
-h3 {
-  text-align: center;
-  font-size: 2.4rem; }
-
-.pc_channelmake-switch .switch__label {
-  width: 50px;
+.pc_channelmake {
   position: relative;
-  display: inline-block; }
-
-.pc_channelmake-switch .switch__content {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  border-radius: 30px;
-  height: 31px;
-  overflow: hidden; }
-
-.pc_channelmake-switch .switch__content:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: calc(100% - 3px);
-  height: calc(100% - 3px);
-  top: 0;
-  left: 0;
-  border: 1.5px solid #E5E5EA;
-  border-radius: 30px;
-  background-color: #fff; }
-
-.pc_channelmake-switch .switch__content:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 30px;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s; }
-
-.pc_channelmake-switch .switch__input {
-  display: none; }
-
-.pc_channelmake-switch .switch__circle {
-  display: block;
-  top: 2px;
-  left: 2px;
-  position: absolute;
-  -webkit-box-shadow: 0 2px 6px #999;
-  box-shadow: 0 2px 6px #999;
-  width: 27px;
-  height: 27px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s; }
-
-.pc_channelmake-switch .switch__input:checked ~ .switch__circle {
-  left: 21px; }
-
-.pc_channelmake-switch .switch__input:checked ~ .switch__content:after {
-  background-color: #4BD964;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+  width: 836px;
+  margin: 0 auto;
+  /*チャンネル作成ボタン*/ }
+  .pc_channelmake h3 {
+    padding: 24px 0 40px 0;
+    text-align: center;
+    font-size: 2.4rem; }
+  .pc_channelmake-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px; }
+    .pc_channelmake-input img {
+      width: 120px;
+      height: 120px;
+      border-radius: 24px;
+      cursor: pointer; }
+  .pc_channelmake-text {
+    margin: 0 64px;
+    display: inline-block; }
+    .pc_channelmake-text .pc_channelmake-subtext {
+      padding: 0 0 24px 0; }
+      .pc_channelmake-text .pc_channelmake-subtext p {
+        font-size: 1.8rem;
+        margin-bottom: 4px; }
+      .pc_channelmake-text .pc_channelmake-subtext input {
+        width: 480px;
+        height: 32px;
+        border-radius: 8px;
+        border-style: none; }
+  .pc_channelmake-release p {
+    font-size: 1.8rem;
+    margin-bottom: 4px; }
+  .pc_channelmake-release .pc_channelmake-switch {
+    text-align: center; }
+    .pc_channelmake-release .pc_channelmake-switch .switchlabel {
+      width: 56px;
+      position: relative;
+      display: inline-block; }
+    .pc_channelmake-release .pc_channelmake-switch .switchcontent {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      border-radius: 30px;
+      height: 32px;
+      overflow: hidden; }
+    .pc_channelmake-release .pc_channelmake-switch .switchcontent:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% - 3px);
+      height: calc(100% - 3px);
+      top: 0;
+      left: 0;
+      border: 1.5px solid #E5E5EA;
+      border-radius: 30px;
+      background-color: #fff; }
+    .pc_channelmake-release .pc_channelmake-switch .switchcontent:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: transparent;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      border-radius: 30px;
+      transition: all .5s; }
+    .pc_channelmake-release .pc_channelmake-switch .switchinput {
+      display: none; }
+    .pc_channelmake-release .pc_channelmake-switch .switchcircle {
+      display: block;
+      top: 2px;
+      left: 2px;
+      position: absolute;
+      box-shadow: 0 2px 6px #999;
+      width: 27px;
+      height: 27px;
+      border-radius: 20px;
+      background-color: #fff;
+      transition: all .5s; }
+    .pc_channelmake-release .pc_channelmake-switch .switchinput:checked ~ .switchcircle {
+      left: 21px; }
+    .pc_channelmake-release .pc_channelmake-switch .switchinput:checked ~ .switchcontent:after {
+      background-color: #4BD964;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .pc_channelmake-allmen .pc_channelmake-allmensub {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; }
+  .pc_channelmake-allmen p {
+    font-size: 1.8rem; }
+    .pc_channelmake-allmen p .fa-angle-left {
+      flex: 1;
+      font-size: 3.2rem;
+      width: 32px;
+      text-align: center; }
+    .pc_channelmake-allmen p .fa-angle-right {
+      flex: 1;
+      font-size: 3.2rem;
+      width: 32px;
+      text-align: center; }
+  .pc_channelmake-allmen .pc_channelmake-menitem {
+    width: 772px;
+    text-align: center; }
+    .pc_channelmake-allmen .pc_channelmake-menitem img {
+      border-radius: 50%; }
+  .pc_channelmake-choicemen .pc_channelmake-choicemensub {
+    display: flex;
+    align-items: center; }
+  .pc_channelmake-choicemen p {
+    font-size: 1.8rem; }
+    .pc_channelmake-choicemen p .fa-angle-left {
+      flex: 1;
+      font-size: 3.2rem;
+      width: 32px;
+      text-align: center; }
+    .pc_channelmake-choicemen p .fa-angle-right {
+      flex: 1;
+      font-size: 3.2rem;
+      width: 32px;
+      text-align: center; }
+  .pc_channelmake-choicemen .pc_channelmake-menitem {
+    width: 772px;
+    text-align: center; }
+    .pc_channelmake-choicemen .pc_channelmake-menitem img {
+      border-radius: 50%; }
+  .pc_channelmake-submit {
+    margin: 40px auto 0;
+    /*marginは個別に対応*/
+    text-align: center; }
+    .pc_channelmake-submit input {
+      font-size: 2rem;
+      width: 240px;
+      height: 40px;
+      border-style: none;
+      border-radius: 16px;
+      cursor: pointer;
+      box-sizing: border-box;
+      border: #000000 solid 2px;
+      background-color: #ffcf07; }
+      .pc_channelmake-submit input:hover {
+        background-color: #fff; }

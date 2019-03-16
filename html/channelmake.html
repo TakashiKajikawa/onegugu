@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>チャンネル作成</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
         <header>
@@ -32,44 +34,74 @@
                 </div>
             </div> 
         </header>
-
-        <!-- 戻る -->
             <div class="pc_backbutton">
                 <p>戻る</p>
             </div>
-        <!-- //戻る -->
 
-            <h3>チャンネルを発行する</h3>
-        
             <div class="pc_channelmake">
-                <form action="">
-                    <div>
-                        <img src="http://placehold.jp/120x120.png" alt="" >
-                        <p>チーム名</p>
-                        <input type="text">
-                        <p>説明</p>
-                        <input type="text">
-                        <p>オープン設定</p>
+                <!-- 戻る -->
+                
+                <!-- //戻る -->
+    
+                <h3>チャンネルを発行する</h3>
+                
+                <form action="" class="pc_channelmake-form">    
+            
+                    <div class="pc_channelmake-input">
                         
-                        <div class="pc_channelmake-switch">
-                            <label class="switch__label">
-                            <input type="checkbox" class="switch__input"/>
-                            <span class="switch__content"></span>
-                            <span class="switch__circle"></span>
-                            </label>
+                        <img src="http://placehold.jp/120x120.png" alt="" >
+                        
+                        <div class="pc_channelmake-text">
+                            <div class="pc_channelmake-subtext">
+                                <p>チーム名 *１０文字以内</p>
+                                <input type="text">
+                            </div>
+                            
+                            <div class="pc_channelmake-subtext">
+                                <p>説明 *40文字以内</p>
+                                <input type="text">
+                            </div>
                         </div>
 
+                        <div class="pc_channelmake-release">
+                            <p>オープン設定</p>
+                            <div class="pc_channelmake-switch">
+                                <label class="switchlabel">
+                                <input type="checkbox" class="switchinput"/>
+                                <span class="switchcontent"></span>
+                                <span class="switchcircle"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pc_channelmake-allmen">
+                        <p>全メンバー(<span></span>)</p>
+                        <div class="pc_channelmake-allmensub">
+                            <p><i class="fas fa-angle-left"></i></p>
+                            <div class="pc_channelmake-menitem">
+                                <img src="http://placehold.jp/64x64.png" alt="">
+                                <p>サンプル</p>
+                            </div>
+                            <p><i class="fas fa-angle-right"></i></p>
+                        </div>
                     </div>
 
-                    <div>
-                        全メンバー
+                    <div class="pc_channelmake-choicemen">
+                        <p>チャンネルメンバー(<span></span>)</p>
+                        <div class="pc_channelmake-choicemensub">
+                            <p><i class="fas fa-angle-left"></i></p>
+                            <div class="pc_channelmake-menitem">
+                                <img src="http://placehold.jp/64x64.png" alt="">
+                                <p>サンプル</p>
+                            </div>
+                            <p><i class="fas fa-angle-right"></i></p>
+                        </div>
                     </div>
-                    <div>
-                        チームメンバー
+
+                    <div class="pc_channelmake-submit">
+                        <input type="submit" name="submit" value="チャンネル作成">
                     </div>
-                    <input type="submit">
                 </form>
-            </div>
-        </main>
 </body>
 </html> 

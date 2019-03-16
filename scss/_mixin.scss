@@ -56,6 +56,27 @@
         }        
 }
 
+/*submitbutton*/
+
+@mixin submitbutton{
+    /*marginは個別に対応*/
+    text-align: center;
+    input{
+        font-size: 2rem;
+        width: 240px;
+        height: 40px;
+        border-style:none;
+        border-radius: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: #000000 solid 2px;
+        background-color: #ffcf07;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+}
+
 /*ボタン個別パーツ*/
 @mixin button{
     display: inline-block;
@@ -215,7 +236,16 @@
         }
 }
 
-/*スイッチ*/
-@mixin switch-wrapper{
-    
+/*アイコン（左）*/
+@mixin icon-left{
+    font-size: 3.2rem;
+    width: 32px;
+    text-align: center;
+}
+
+/*アイコン（右）*/
+@mixin icon-right{
+    font-size: 3.2rem;
+    width: 32px;
+    text-align: center;
 }
